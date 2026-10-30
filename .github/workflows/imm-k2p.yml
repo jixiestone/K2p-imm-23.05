@@ -15,7 +15,7 @@ on:
   workflow_dispatch:
     inputs:
       ssh:
-        description: 'SSH connection to Actions'
+        description: 'Start SSH via tmate'
         required: false
         default: 'false'
 
