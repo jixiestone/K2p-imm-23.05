@@ -20,7 +20,6 @@ on:
         default: 'false'
 
 env:
-  ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION=true
   REPO_URL: https://github.com/immortalwrt/immortalwrt.git
   REPO_BRANCH: openwrt-23.05
   FEEDS_CONF: feeds.conf.default
