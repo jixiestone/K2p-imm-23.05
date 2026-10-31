@@ -40,8 +40,7 @@ jobs:
     - uses: actions/checkout@v6        
     - uses: actions/setup-node@v6     
     - uses: actions/setup-go@v6
-    - uses: actions/upload-artifact@v6
-    
+        
     - name: Initialization environment
       env:
         DEBIAN_FRONTEND: noninteractive
@@ -166,7 +165,7 @@ jobs:
         echo "status=success" >>$GITHUB_OUTPUT
     
     - name: Upload firmware to release
-      uses: softprops/action-gh-release@v3
+      uses: softprops/action-gh-release@v3.03
       if: steps.tag.outputs.status == 'success' && !cancelled()
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
