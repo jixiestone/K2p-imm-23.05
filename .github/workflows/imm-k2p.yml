@@ -35,12 +35,11 @@ env:
 
 jobs:
   build:
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-26.04
     steps:
     - uses: actions/checkout@v6        
     - uses: actions/setup-node@v6     
-    - uses: actions/setup-go@v6
-        
+            
     - name: Initialization environment
       env:
         DEBIAN_FRONTEND: noninteractive
