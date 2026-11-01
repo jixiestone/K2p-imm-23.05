@@ -38,7 +38,8 @@ jobs:
     runs-on: ubuntu-26.04
     steps:
     - uses: actions/checkout@v6        
-    - uses: actions/setup-node@v6     
+    - uses: actions/setup-node@v6
+    - uses: actions/setup-go@v5
             
     - name: Initialization environment
       env:
