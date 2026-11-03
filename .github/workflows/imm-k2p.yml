@@ -41,7 +41,11 @@ jobs:
     - uses: actions/setup-node@v6
     - uses: actions/setup-go@v6
       with:
-          cache: false
+        go-version: '4.1.0'          # Specify the Go version
+        go-version-file: 'go.mod'   # Optional: path to version file
+        check-latest: false          # Check for the latest version if true
+        cache: true                  # Enable caching of Go modules
+        cache-dependency-path: 'go.sum'  # Path for caching dependencies
             
     - name: Initialization environment
       env:
