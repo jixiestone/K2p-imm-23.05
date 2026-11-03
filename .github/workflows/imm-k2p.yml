@@ -39,7 +39,7 @@ jobs:
     steps:
     - uses: actions/checkout@v6        
     - uses: actions/setup-node@v6
-    - uses: actions/setup-go@v4.1.0
+    - uses: actions/setup-go@v1.24.13
       with:
         go-version-file: 'go.mod'   # Optional: path to version file
         check-latest: false          # Check for the latest version if true
