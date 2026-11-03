@@ -21,7 +21,7 @@ on:
 
 env:
   REPO_URL: https://github.com/immortalwrt/immortalwrt.git
-  REPO_BRANCH: openwrt-23.05
+  REPO_BRANCH: openwrt-23.05.7
   FEEDS_CONF: feeds.conf.default
   CONFIG_FILE: imm-k2p.config
   DIY_P1_SH: imm-k2p-part1.sh
@@ -59,7 +59,6 @@ jobs:
       run: |
         df -hT $PWD
         git clone $REPO_URL -b $REPO_BRANCH openwrt
-        checkout v23.05.7
         ln -sf /workdir/openwrt $GITHUB_WORKSPACE/openwrt
     
     - name: Load custom feeds
