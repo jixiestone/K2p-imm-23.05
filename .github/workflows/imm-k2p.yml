@@ -40,6 +40,8 @@ jobs:
     - uses: actions/checkout@v6        
     - uses: actions/setup-node@v6
     - uses: actions/setup-go@v6
+      with:
+          cache: false
             
     - name: Initialization environment
       env:
