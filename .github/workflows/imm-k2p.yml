@@ -16,8 +16,8 @@ on:
     inputs:
       ssh:
         description: 'Start SSH via tmate'
-        required: false
-        default: 'false'
+        required: ture
+        default: 'ture'
 
 env:
   REPO_URL: https://github.com/immortalwrt/immortalwrt.git
